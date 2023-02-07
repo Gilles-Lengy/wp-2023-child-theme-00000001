@@ -11,8 +11,8 @@ function wp00000001_my_block_patterns() {
             'description' => _x( 'The part of a project that is always displayed', 'wp-2023-child-theme-00000001' ),
             'categories'  => array( 'columns' ),
             'content'     => '
-<!-- wp:heading -->
-<h2><a href="https://01010101.one" target="_blank" rel="noreferrer noopener">One Human Factor</a></h2>
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center"><a href="https://01010101.one" target="_blank" rel="noreferrer noopener">One Human Factor</a></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
