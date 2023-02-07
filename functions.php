@@ -12,7 +12,7 @@ function wp00000001_my_block_patterns() {
             'categories'  => array( 'columns' ),
             'content'     => '
 <!-- wp:heading {"textAlign":"center"} -->
-<h2 class="has-text-align-center"><a href="https://01010101.one" target="_blank" rel="noreferrer noopener">One Human Factor</a></h2>
+<h3 class="has-text-align-center"><a href="https://01010101.one" target="_blank" rel="noreferrer noopener">One Human Factor</a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
