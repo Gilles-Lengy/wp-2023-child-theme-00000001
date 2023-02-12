@@ -1,16 +1,35 @@
 <?
+
+/*
+ * Importing style.css
+ ************************************************/
+
+function my_theme_enqueue_styles() {
+
+    $parent_style = 'twentytwentythree';
+
+    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'child-style',
+        get_stylesheet_directory_uri() . '/style.css',
+        array( $parent_style ),
+        wp_get_theme()->get('1.0.0')
+    );
+}
+add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+
 /*
  * Reusable blocks
  ************************************************/
 
-function wp00000001_my_block_patterns() {
+function wp00000001_my_block_patterns()
+{
     register_block_pattern(
         'wp-2023-child-theme-00000001/project-shown-pattern',
         array(
-            'title'       => __( 'Project shown expand', 'wp-2023-child-theme-00000001'),
-            'description' => _x( 'The part of a project that is always displayed', 'wp-2023-child-theme-00000001' ),
-            'categories'  => array( 'columns' ),
-            'content'     => '
+            'title' => __('Project shown expand', 'wp-2023-child-theme-00000001'),
+            'description' => _x('The part of a project that is always displayed', 'wp-2023-child-theme-00000001'),
+            'categories' => array('columns'),
+            'content' => '
 <!-- wp:heading {"textAlign":"center"} -->
 <h2 class="has-text-align-center"><a href="https://01010101.one" target="_blank" rel="noreferrer noopener">One Human Factor</a></h2>
 <!-- /wp:heading -->
@@ -34,10 +53,10 @@ function wp00000001_my_block_patterns() {
     register_block_pattern(
         'wp-2023-child-theme-00000001/project-hide-pattern',
         array(
-            'title'       => __( 'Project hide expand', 'wp-2023-child-theme-00000001'),
-            'description' => _x( 'The part of a project that is hidden on arrival', 'wp-2023-child-theme-00000001' ),
-            'categories'  => array( 'columns' ),
-            'content'     => '
+            'title' => __('Project hide expand', 'wp-2023-child-theme-00000001'),
+            'description' => _x('The part of a project that is hidden on arrival', 'wp-2023-child-theme-00000001'),
+            'categories' => array('columns'),
+            'content' => '
     <!-- wp:paragraph -->
 <p>ONE HUMAN FACTOR is my main project. I started it under the name of "ONE" in 1996. Many years later, in 2018, it became "ONE HUMAN FACTOR".</p>
 <!-- /wp:paragraph -->
@@ -76,4 +95,5 @@ function wp00000001_my_block_patterns() {
     );
 
 }
-add_action( 'init', 'wp00000001_my_block_patterns' );
+
+add_action('init', 'wp00000001_my_block_patterns');
