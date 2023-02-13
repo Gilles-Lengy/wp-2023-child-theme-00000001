@@ -636,7 +636,9 @@
 			"h2": {
 				"typography": {
 					"fontSize": "clamp(2.625rem, calc(2.625rem + ((1vw - 0.48rem) * 8.4135)), 3.25rem)",
-					"lineHeight": "1.2"
+					"lineHeight": "1.2",
+					"textTransform": "uppercase",
+					"textDecoration": "underline overline solid var(--wp--preset--color--contrast) 4px"
 				}
 			},
 			"h3": {
