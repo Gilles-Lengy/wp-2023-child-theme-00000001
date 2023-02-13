@@ -34,6 +34,13 @@
 		}
 	},
 	"styles": {
+		"blocks": {
+			"core/post-title": {
+				"typography": {
+					"textDecoration": "underline dotted"
+				}
+			}
+		},
 		"elements": {
 			"button": {
 				"border": {
