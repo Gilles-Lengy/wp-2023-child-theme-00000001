@@ -30,12 +30,12 @@
 		"color": {
 			"palette": [
 				{
-					"color": "#ffffff",
+					"color": "#000000",
 					"name": "Base",
 					"slug": "base"
 				},
 				{
-					"color": "#000000",
+					"color": "#ffffff",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
@@ -45,12 +45,12 @@
 					"slug": "primary"
 				},
 				{
-					"color": "#345C00",
+					"color": "#ff0000",
 					"name": "Secondary",
 					"slug": "secondary"
 				},
 				{
-					"color": "#F6F6F6",
+					"color": "#fff000",
 					"name": "Tertiary",
 					"slug": "tertiary"
 				}
@@ -367,7 +367,8 @@
 					}
 				},
 				"typography": {
-					"fontWeight": "400"
+					"fontWeight": "400",
+					"textDecoration": "underline dashed"
 				},
 				"elements": {
 					"link": {
