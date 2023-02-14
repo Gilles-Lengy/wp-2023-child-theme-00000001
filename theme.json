@@ -44,6 +44,10 @@
           "background": "var(--wp--preset--color--secondary)",
           "text": "var(--wp--preset--color--base)"
         },
+        "typography": {
+          "fontWeight": "700",
+          "textTransform": "uppercase"
+        },
         "spacing": {
           "padding": {
             "top": ".667em",
