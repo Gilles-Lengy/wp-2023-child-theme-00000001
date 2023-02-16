@@ -86,6 +86,9 @@
     },
     "spacing": {
       "blockGap": "2rem"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--ibm-plex-mono)"
     }
   }
 }
