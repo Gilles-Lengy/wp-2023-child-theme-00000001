@@ -85,7 +85,7 @@
       }
     },
     "spacing": {
-      "blockGap": "4rem"
+      "blockGap": "2rem"
     }
   }
 }
