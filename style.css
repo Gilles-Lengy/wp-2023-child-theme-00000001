@@ -27,3 +27,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .container-project p{
     color: var(--wp--preset--color--base);
 }
+
+/*
+ * Plugin lazy load correction
+ */
+.wp-embed-responsive .wp-block-embed[class*="wp-embed-aspect-"] .container-lazyload {
+    position: unset;
+}
